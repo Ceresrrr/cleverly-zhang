@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cleverly Zhang — Economics student, AI learner, and curious mind based in Shanghai." />
+    <meta name="theme-color" content="#050505" />
+    <title>Cleverly Zhang — Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Cleverly Zhang home">
+        <span class="brand-mark">CZ</span><span class="brand-dot"></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" data-zh="关于" data-en="About">关于</a>
+        <a href="#interests" data-zh="坐标" data-en="Orbit">坐标</a>
+        <a href="#now" data-zh="当下" data-en="Now">当下</a>
+      </nav>
+      <button class="lang-switch" id="langSwitch" aria-label="Switch language"><span>中</span><i></i><span>EN</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-eyebrow reveal">
+          <span class="live-dot"></span>
+          <span data-zh="上海 · 中国 / 31.23°N, 121.47°E" data-en="SHANGHAI · CHINA / 31.23°N, 121.47°E">上海 · 中国 / 31.23°N, 121.47°E</span>
+        </div>
+        <div class="hero-title-wrap">
+          <p class="hero-index">PORTFOLIO / 2026</p>
+          <h1 class="hero-title" aria-label="Cleverly Zhang">
+            <span class="line reveal">CLEVERLY</span>
+            <span class="line outline reveal">ZHANG</span>
+          </h1>
+          <div class="orbital-mark" aria-hidden="true"><span>CZ</span><i></i></div>
+        </div>
+        <div class="hero-footer reveal">
+          <p class="hero-intro" data-zh="经济学学生，AI 学习者，也是一名在宏观世界与个人热爱之间持续探索的年轻人。" data-en="An economics student and AI learner, exploring the space between the macro world and personal curiosity.">经济学学生，AI 学习者，也是一名在宏观世界与个人热爱之间持续探索的年轻人。</p>
+          <a class="scroll-cue" href="#about"><span data-zh="向下探索" data-en="Explore">向下探索</span><b>↓</b></a>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Topics">
+        <div class="ticker-track">
+          <span>MACROECONOMICS</span><i>✦</i><span>ARTIFICIAL INTELLIGENCE</span><i>✦</i><span>DATA ANALYSIS</span><i>✦</i><span>GO</span><i>✦</i><span>READING</span><i>✦</i><span>MACROECONOMICS</span><i>✦</i><span>ARTIFICIAL INTELLIGENCE</span><i>✦</i><span>DATA ANALYSIS</span><i>✦</i><span>GO</span><i>✦</i><span>READING</span><i>✦</i>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-label reveal"><span>01</span><p data-zh="关于我" data-en="ABOUT ME">关于我</p></div>
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <p data-zh="沉稳地观察，友善地连接，持续地求知。" data-en="Observe calmly. Connect kindly. Keep learning.">沉稳地观察，友善地连接，持续地求知。</p>
+          </div>
+          <div class="about-copy reveal">
+            <p data-zh="我叫 Cleverly Zhang，2007 年生于上海，现在是上海财经大学经济学专业学生。我对宏观经济如何塑造现实充满兴趣，也在学习 AI 与数据分析，试着理解这个快速变化的时代。" data-en="I'm Cleverly Zhang, born in Shanghai in 2007 and currently studying Economics at Shanghai University of Finance and Economics. I'm fascinated by how macroeconomics shapes reality, while learning AI and data analysis to better understand a rapidly changing world.">我叫 Cleverly Zhang，2007 年生于上海，现在是上海财经大学经济学专业学生。我对宏观经济如何塑造现实充满兴趣，也在学习 AI 与数据分析，试着理解这个快速变化的时代。</p>
+            <p data-zh="学习之外，我在科幻与中外经典文学中穿梭，在围棋的方寸之间思考，也享受乒乓球、音乐和游戏带来的节奏。对投资，我刚刚起步——稳中求进，是方法，也是态度。" data-en="Beyond study, I move between science fiction and literary classics, think across a Go board, and enjoy the rhythm of table tennis, music, and games. My investing journey has just begun—steady progress is both my method and mindset.">学习之外，我在科幻与中外经典文学中穿梭，在围棋的方寸之间思考，也享受乒乓球、音乐和游戏带来的节奏。对投资，我刚刚起步——稳中求进，是方法，也是态度。</p>
+          </div>
+          <div class="profile-card reveal">
+            <div class="profile-top"><span>PROFILE.DATA</span><span class="status">ONLINE</span></div>
+            <dl>
+              <div><dt data-zh="身份" data-en="ROLE">身份</dt><dd data-zh="经济学本科生" data-en="Economics Student">经济学本科生</dd></div>
+              <div><dt data-zh="所在地" data-en="BASE">所在地</dt><dd data-zh="上海 · 奉贤" data-en="Fengxian, Shanghai">上海 · 奉贤</dd></div>
+              <div><dt data-zh="方向" data-en="FOCUS">方向</dt><dd data-zh="宏观经济 / AI" data-en="Macro / AI">宏观经济 / AI</dd></div>
+              <div><dt data-zh="语言" data-en="LANGUAGE">语言</dt><dd data-zh="中文 / 英语" data-en="Chinese / English">中文 / 英语</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests section" id="interests">
+        <div class="section-label reveal"><span>02</span><p data-zh="兴趣坐标" data-en="PERSONAL ORBIT">兴趣坐标</p></div>
+        <div class="orbit-grid">
+          <article class="orbit-card large reveal" data-code="01">
+            <div class="card-visual econ"><div class="econ-line"></div><span>Δ GDP</span><b>∞</b></div>
+            <div><p class="micro">PRIMARY FOCUS</p><h3 data-zh="宏观经济" data-en="Macroeconomics">宏观经济</h3><p data-zh="从周期、政策与市场中，理解世界如何运转。" data-en="Understanding how the world moves through cycles, policy and markets.">从周期、政策与市场中，理解世界如何运转。</p></div>
+          </article>
+          <article class="orbit-card reveal" data-code="02">
+            <div class="card-visual ai"><span>AI</span><i></i><i></i><i></i></div>
+            <div><p class="micro">NEXT FRONTIER</p><h3 data-zh="人工智能" data-en="Artificial Intelligence">人工智能</h3><p data-zh="跟上时代，也扩展认知与创造的边界。" data-en="Keeping pace with the era and expanding the edge of thought and creation.">跟上时代，也扩展认知与创造的边界。</p></div>
+          </article>
+          <article class="orbit-card reveal" data-code="03">
+            <div class="card-visual go"><div class="go-board"></div><span></span><b></b></div>
+            <div><p class="micro">AMATEUR 2-DAN</p><h3 data-zh="围棋" data-en="The Game of Go">围棋</h3><p data-zh="在黑白之间学习判断、耐心与全局观。" data-en="Learning judgement, patience and the whole picture in black and white.">在黑白之间学习判断、耐心与全局观。</p></div>
+          </article>
+          <article class="orbit-card wide reveal" data-code="04">
+            <div class="interest-list">
+              <span data-zh="阅读" data-en="Reading">阅读</span><span data-zh="数据分析" data-en="Data Analysis">数据分析</span><span data-zh="乒乓球" data-en="Table Tennis">乒乓球</span><span data-zh="投资" data-en="Investing">投资</span><span data-zh="游戏" data-en="Gaming">游戏</span><span data-zh="双语学习" data-en="Bilingual Learning">双语学习</span>
+            </div>
+            <div><p class="micro">A WIDER LENS</p><h3 data-zh="保持好奇" data-en="Stay Curious">保持好奇</h3></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote section">
+        <div class="quote-mark">“</div>
+        <blockquote class="reveal">
+          <p>悟已往之不谏，<br />知来者之可追。</p>
+          <footer>— <span data-zh="陶渊明《归去来兮辞》" data-en="Tao Yuanming, The Return">陶渊明《归去来兮辞》</span></footer>
+        </blockquote>
+        <div class="quote-translation reveal" data-zh="过去无法挽回，未来仍然可以追寻。向前，不急，但不停。" data-en="The past cannot be recalled; the future can still be pursued. Forward—not hurried, never still.">过去无法挽回，未来仍然可以追寻。向前，不急，但不停。</div>
+      </section>
+
+      <section class="now section" id="now">
+        <div class="section-label reveal"><span>03</span><p data-zh="此刻进行时" data-en="CURRENTLY">此刻进行时</p></div>
+        <div class="now-grid">
+          <div class="now-heading reveal"><h2 data-zh="正在构建<br>自己的未来。" data-en="Building<br>what comes next.">正在构建<br>自己的未来。</h2><p>UPDATED / JUL 2026</p></div>
+          <div class="now-items">
+            <div class="now-item reveal"><span>01</span><div><h3 data-zh="学习经济学" data-en="Studying Economics">学习经济学</h3><p data-zh="在上海财经大学，从基础出发建立宏观视野。" data-en="Building a macro perspective from the foundations at SUFE.">在上海财经大学，从基础出发建立宏观视野。</p></div><b>↗</b></div>
+            <div class="now-item reveal"><span>02</span><div><h3 data-zh="探索 AI" data-en="Exploring AI">探索 AI</h3><p data-zh="把新工具变成理解世界与扩展自己的方式。" data-en="Turning new tools into ways to understand the world and extend myself.">把新工具变成理解世界与扩展自己的方式。</p></div><b>↗</b></div>
+            <div class="now-item reveal"><span>03</span><div><h3 data-zh="稳中求进" data-en="Growing Steadily">稳中求进</h3><p data-zh="在投资、语言与生活中积累长期主义的复利。" data-en="Compounding a long-term mindset across investing, language and life.">在投资、语言与生活中积累长期主义的复利。</p></div><b>↗</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect section">
+        <p class="micro reveal">FOLLOW THE SIGNAL</p>
+        <h2 class="reveal" data-zh="关注我的动态" data-en="Follow my journey">关注我的动态</h2>
+        <div class="social-links reveal">
+          <a href="https://x.com/CeresCleverly" target="_blank" rel="noopener noreferrer"><span>X / TWITTER</span><b>@CeresCleverly</b><i>↗</i></a>
+          <a href="https://www.youtube.com/@cerescleverly" target="_blank" rel="noopener noreferrer"><span>YOUTUBE</span><b>@cerescleverly</b><i>↗</i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">CLEVERLY<br />ZHANG</div>
+      <div><p data-zh="在上海，观察世界。" data-en="Observing the world from Shanghai.">在上海，观察世界。</p><span>© <span id="year"></span> CZ</span></div>
+      <a href="#top" aria-label="Back to top">↑</a>
+    </footer>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
